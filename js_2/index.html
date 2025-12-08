@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all .33s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submit">
+
+        <label for="login">Enter Login:</label>
+        <input type="text" name="login" id="login">
+
+
+        <label for="password">Enter Password:</label>
+        <input type="password" name="password" id="password">
+
+        <label for="faculty">Faculty</label>
+        <select name="faculty" id="faculty">
+            <option value="engineering">Natural sciences and Engineering</option>
+            <option value="business">Business school</option>
+            <option value="jurisdiction">Jurisdiction</option>
+            <option value="edu">Educational School</option>
+        </select>
+
+        <label for="feedback"></label>
+        <textarea name="feedback" id="feedback"></textarea>
+
+        <button>SEND</button>
+    </form>
+    <script src="start.js"></script>
+</body>
+
+</html>
